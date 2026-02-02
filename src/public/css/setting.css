@@ -1,0 +1,109 @@
+.setting-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  padding: 0 16px;
+  margin-top: 0;
+}
+
+.setting-page-modal {
+  min-height: 100%;
+}
+
+
+.setting-card {
+  width: min(360px, 92vw);
+  padding: 16px 18px 14px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.setting-card-wide {
+  width: min(520px, 90vw);
+  text-align: left;
+}
+
+.setting-title {
+  margin: 0 0 8px;
+  font-size: 15px;
+  color: #444;
+}
+
+.setting-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-input,
+.form-textarea {
+  padding: 8px 10px;
+}
+
+.form-textarea {
+  min-height: 72px;
+  resize: vertical;
+}
+
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.form-actions-wide {
+  position: relative;
+  justify-content: center;
+  gap: 16px;
+  padding-right: 40px;
+}
+
+.form-actions-wide .inline-form {
+  position: absolute;
+  right: 0;
+}
+
+.inline-form {
+  display: inline-flex;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 120px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 13px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #b895f4, #f0a3d7);
+  color: #fff;
+  border: none;
+}
+
+.btn-ghost {
+  background: #e7e7e7;
+  color: #555;
+}
+
+.btn-icon {
+  min-width: 36px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background: transparent;
+  color: #ff6b6b;
+  border: none;
+  font-size: 16px;
+}
