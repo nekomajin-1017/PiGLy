@@ -44,7 +44,7 @@ php artisan db:seed
 **テーブル仕様**
 ![テーブル仕様](tables.png)
 
-**ER図**
+**ER図**<br>
 ![ER図](pigly.drawio.png)
 
 **URL**
