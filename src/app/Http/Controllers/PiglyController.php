@@ -64,7 +64,7 @@ class PiglyController extends Controller
 
         $record->update($data);
 
-        return redirect("/weight_logs/{$weightLogId}");
+        return redirect('/weight_logs');
     }
 
     public function destroy($weightLogId)
