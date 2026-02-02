@@ -48,8 +48,8 @@ php artisan db:seed
 ![ER図](pigly.drawio.png)
 
 **URL**
-- ログイン画面：http://localhost/login
-　ID：demo@example.com
+- ログイン画面：http://localhost/login<br>
+　ID：demo@example.com<br>
 　パスワード：password
 - 詳細/編集画面：http://localhost/weight_logs
 - phpMyAdmin:：http://localhost:8080/
