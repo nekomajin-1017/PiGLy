@@ -33,9 +33,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/weight_logs', [PiglyController::class, 'index']);
     Route::post('/weight_logs/create', [PiglyController::class, 'store']);
     Route::get('/weight_logs/search', [PiglyController::class, 'search']);
-    Route::get('/weight_logs/{weightLogId}', [PiglyController::class, 'show']);
-    Route::patch('/weight_logs/{weightLogId}/update', [PiglyController::class, 'update']);
-    Route::delete('/weight_logs/{weightLogId}/delete', [PiglyController::class, 'destroy']);
     Route::get('/weight_logs/goal_setting', [PiglyController::class, 'goalSetting']);
     Route::post('/weight_logs/goal_setting', [PiglyController::class, 'goalUpdate']);
+    Route::get('/weight_logs/{weightLogId}', [PiglyController::class, 'show'])->whereNumber('weightLogId');
+    Route::patch('/weight_logs/{weightLogId}/update', [PiglyController::class, 'update'])->whereNumber('weightLogId');
+    Route::delete('/weight_logs/{weightLogId}/delete', [PiglyController::class, 'destroy'])->whereNumber('weightLogId');
 });
