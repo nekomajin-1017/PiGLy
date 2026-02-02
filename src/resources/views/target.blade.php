@@ -8,7 +8,7 @@
   <div class="setting-page setting-page-modal">
     <div class="setting-card">
       <h2 class="setting-title">目標体重設定</h2>
-      <form class="setting-form" action="/wight_logs/goal_setting" method="post" novalidate>
+      <form class="setting-form" action="/weight_logs/goal_setting" method="post" novalidate>
         @csrf
         <div class="form-row">
           <div class="input-unit">
